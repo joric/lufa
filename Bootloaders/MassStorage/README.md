@@ -2,7 +2,9 @@
 
 ## Download
 
-* [BootloaderMassStorage.hex](https://raw.githubusercontent.com/joric/lufa/promicro/Bootloaders/MassStorage/BootloaderMassStorage.hex)
+* [BootloaderMassStorage.hex](https://raw.githubusercontent.com/joric/lufa/promicro/Bootloaders/MassStorage/precompiled/BootloaderMassStorage.hex)
+
+* [FLASH.BIN](https://raw.githubusercontent.com/joric/lufa/promicro/Bootloaders/MassStorage/precompiled/FLASH.BIN) (LED 17 blinker)
 
 ## Video
 
@@ -48,7 +50,7 @@ Hold Reset (short RST to GND) on power on for USB drive. Convert userspace firmw
 avr-objcopy -I ihex input.hex -O binary FLASH.BIN
 ```
 
-Replace the old FLASH.BIN on USB drive (delete the old one first), then reboot the Pro Micro (press Reset once).
+Replace the old FLASH.BIN on USB drive (delete the old one first), then reset (power cycle) the Pro Micro.
 
 ## References
 
